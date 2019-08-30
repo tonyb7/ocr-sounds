@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+ 
+<head>
+ 
+	<title>New Encounter Skit Sounds</title>
+ 
+	<!-- CSS -->
+	<style type="text/css">
+        body {
+            background-color: #add8e6;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Georgia;
+        }
+		#bigbody{
+            text-align: center;
+            margin-left: auto;
+            margin-right:auto;
+            width: 800px;
+            padding: 20px;
+        }
+        audio {
+            width: 300px;
+            height: 30px;
+        }
+        
+	</style>
+ 
+</head>
+ 
+<body>
+
+    <script type="text/javascript">
+        // var loneliness = document.getElementById('loneliness');
+        // var gasping = document.getElementById('gasping');
+        // loneliness.playing = false;
+        // gasping.playing = false;
+        function playSound(x) {
+            if (x.currentTime > 5 || x.currentTime == 0) {
+                pauseAudio(x);
+            }
+            if (x.playing) {
+                pauseAudio(x);
+            } else {
+                playAudio(x);
+            }
+        }
+        function playAudio(x) {    
+            x.play();
+            x.playing = true;
+        }
+        function pauseAudio(x) {
+            x.pause();
+            x.currentTime = 0;
+            x.playing = false;
+        }
+	</script>
+
+    <div id = "bigbody">
+        <!-- bugs:
+            multiple buttons for same sound
+            after sound stops, playing is still true
+        -->
+
+        <h1>
+            New Encounter Skit Sounds
+        </h1>
+        These are the buttons to play audio for New Encounter skit.
+        <br/>
+        
+        <h2>
+            Sounds
+        </h2>
+        <p>These sound clips are cut so that we have exactly what we want to play.</p>
+
+        <table align="center">
+		    <tr>
+                <th>Sad Violin:  </th>
+                <th>
+                    <audio controls>
+                        <source src="sound-files/sadtrimmed.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </th>
+            </tr>
+            <tr>
+                <th>Voicemail:  </th>
+                <th>
+                    <audio controls>
+                        <source src="sound-files/voicemailtrimmed.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </th>
+            </tr>
+            <tr>
+                <th>We Family:  </th>
+                <th>
+                    <audio controls>
+                        <source src="sound-files/wefamilytrimmed.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </th>
+            </tr>
+            <tr>
+                <th>Lil' Yenny Beat:  </th>
+                <th>
+                    <audio controls>
+                        <source src="sound-files/yennyrap.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </th>
+            </tr>
+        </table>
+		
+		<h2>
+            Full Sounds
+        </h2>
+        <p>These are the full sound clips in case something doesn't work. 
+            If you click the YouTube links, they may have ads, so open them up beforehand if you want to use them.</p>
+        <table align="center">
+            <tr>
+                <th>Sad Violin Full:  </th>
+                <th>
+                    <audio controls>
+                        <source src="sound-files/sad.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </th>
+                <th>(0 sec - 5 sec)</th>
+                <th><a href="https://www.youtube.com/watch?v=7ODcC5z6Ca0" target="_blank">YouTube Link</a></th>
+            </tr>
+            <tr>
+                <th>Voicemail Full:  </th>
+                <th>
+                    <audio controls>
+                        <source src="sound-files/voicemail.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </th>
+                <th>(7 sec - end)</th>
+                <th><a href="https://youtu.be/gbstL189F4Y?t=7" target="_blank">YouTube Link</a></th>
+            </tr>
+            <tr>
+                <th>We Family Full:  </th>
+                <th>
+                    <audio controls>
+                        <source src="sound-files/wefamily.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </th>
+                <th>(32 sec - 50 sec)</th>
+                <th><a href="https://youtu.be/uyGY2NfYpeE?t=32" target="_blank">YouTube Link</a></th>
+            </tr>
+            <tr>
+                <th>Lil' Yenny Beat Full:  </th>
+                <th>
+                    <audio controls>
+                        <source src="sound-files/yennyrap.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </th>
+                <th></th>
+                <th><a href="https://www.youtube.com/watch?v=wBINoX9IKWQ" target="_blank">YouTube Link</a></th>
+            </tr>
+        </table>
+        
+        <h2>
+            YouTube vids
+        </h2>
+        <p>Vids themselves embedded here. They should start and end at the right time automatically.</p>
+        <p><i>Sad Violin Music</i></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7ODcC5z6Ca0?start=0&end=5&version=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><i>Voicemail</i>: Not available. Go to <a href="https://youtu.be/gbstL189F4Y?t=7" target="_blank">YouTube Link.</a></p>
+        <br/><p><i>We are Family</i></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uyGY2NfYpeE?start=32&end=50&version=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><i>Lil' Yenny Rap</i></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wBINoX9IKWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </div>
+
+</body>
+ 
+</html>
